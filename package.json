@@ -1,0 +1,26 @@
+{
+  "name": "price-tracker",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "prepare": "bunx prisma generate --no-engine",
+    "crawl": "bun src/crawler.ts"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "latest",
+    "@types/node": "^20.7.0",
+    "bun-types": "latest",
+    "prisma": "^5.3.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@jup-ag/api": "^6.0.6",
+    "@prisma/client": "^5.3.1",
+    "@prisma/extension-accelerate": "^0.6.2",
+    "@types/lodash": "^4.14.199",
+    "date-fns": "^2.30.0",
+    "lodash": "^4.17.21"
+  }
+}
